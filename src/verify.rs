@@ -25,6 +25,7 @@ static SUPPORTED_SIG_ALGS: SignatureAlgorithms = &[&webpki::ECDSA_P256_SHA256,
                                                    &webpki::RSA_PSS_2048_8192_SHA384_LEGACY_KEY,
                                                    &webpki::RSA_PSS_2048_8192_SHA512_LEGACY_KEY,
                                                    &webpki::RSA_PKCS1_2048_8192_SHA256,
+                                                   &webpki::RSA_PKCS1_2048_8192_SHA256_NONULL,
                                                    &webpki::RSA_PKCS1_2048_8192_SHA384,
                                                    &webpki::RSA_PKCS1_2048_8192_SHA512,
                                                    &webpki::RSA_PKCS1_3072_8192_SHA384];
@@ -254,7 +255,7 @@ static ECDSA_SHA256: SignatureAlgorithms = &[&webpki::ECDSA_P256_SHA256,
 static ECDSA_SHA384: SignatureAlgorithms = &[&webpki::ECDSA_P256_SHA384,
                                              &webpki::ECDSA_P384_SHA384];
 
-static RSA_SHA256: SignatureAlgorithms = &[&webpki::RSA_PKCS1_2048_8192_SHA256];
+static RSA_SHA256: SignatureAlgorithms = &[&webpki::RSA_PKCS1_2048_8192_SHA256, &webpki::RSA_PKCS1_2048_8192_SHA256_NONULL];
 static RSA_SHA384: SignatureAlgorithms = &[&webpki::RSA_PKCS1_2048_8192_SHA384];
 static RSA_SHA512: SignatureAlgorithms = &[&webpki::RSA_PKCS1_2048_8192_SHA512];
 static RSA_PSS_SHA256: SignatureAlgorithms = &[&webpki::RSA_PSS_2048_8192_SHA256_LEGACY_KEY];

@@ -18,6 +18,9 @@ ring = "0.14"
 webpki = "0.19"
 sct = "0.5"
 
+[patch.crates-io]
+webpki = { git = "https://github.com/nordstrom/webpki", branch = "0.19.1+seanmonstar+cody" }
+
 [features]
 default = ["logging"]
 logging = ["log"]
